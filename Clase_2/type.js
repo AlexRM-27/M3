@@ -54,3 +54,8 @@ if (temp > 30) {
 } else {
     console.log('Frio');
 }
+
+//Otra manera de representar if-else (Operador ternario)
+let edad = 25;
+let resultado = (edad >= 18) ? 'Mayor de edad' : 'Menor de edad';
+console.log(resultado);
