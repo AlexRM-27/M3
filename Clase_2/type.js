@@ -26,3 +26,22 @@ console.log(alumnos);
 alumnos.unshift('Pepito');
 console.log(alumnos);
 console.log(alumnos.length);
+
+//Números
+let x = 2;
+x += 5;
+console.log(x);
+
+let division = 0;
+console.log(division / 0);
+
+//Si aprueba o reprueba
+
+let nota = 5.999999999999;
+const notaAprobatoria = 6;
+
+if (nota >= notaAprobatoria) {
+    console.log('Aprobado');
+} else {
+    console.log('Reprobado');
+}
