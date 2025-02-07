@@ -45,3 +45,12 @@ if (nota >= notaAprobatoria) {
 } else {
     console.log('Reprobado');
 }
+
+let temp = 40;
+if (temp > 30) {
+    console.log('Calor');
+} else if (temp >= 15 && temp <= 29){
+    console.log('Templado');
+} else {
+    console.log('Frio');
+}
