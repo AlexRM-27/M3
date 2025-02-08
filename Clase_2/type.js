@@ -57,5 +57,5 @@ if (temp > 30) {
 
 //Otra manera de representar if-else (Operador ternario)
 let edad = 25;
-let resultado = (edad >= 18) ? 'Mayor de edad' : 'Menor de edad';
+let resultado = (edad >= 18) ? 'Mayor de edad' : 'Menor de edad'; //si la condición se puede almacenar en un renglón, se recomienda utilizar el operador ternario, de lo contrario utiliza la estructura tradicional
 console.log(resultado);
