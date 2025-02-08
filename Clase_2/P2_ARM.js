@@ -29,7 +29,7 @@ if (notaEstudiante > 0 && notaEstudiante <= 100) { //Con este primer if se evita
  */
 
 // EJERCICIO 1
-
+/*
 let numeroAleatorio = Math.floor(Math.random() * 101);
 switch (numeroAleatorio % 2) {
     case 0:
@@ -37,4 +37,24 @@ switch (numeroAleatorio % 2) {
         break;
     default:
         console.log(`El número ${numeroAleatorio} es impar`);
+}
+*/
+//EJERCICIO 2
+
+let numeroAleatorio2 = Math.floor(Math.random() * 101);
+let esPrimo = true;
+if (numeroAleatorio2 < 2) { // Excluye 0 y 1 antes del bucle
+    esPrimo = false;
+} else {
+for (let i = 2; i < numeroAleatorio2; i++) {
+    if (numeroAleatorio2 % i === 0) {
+        esPrimo = false;
+        break;
+    }
+}        
+    }
+if (esPrimo) {
+    console.log(`El número ${numeroAleatorio2} es primo`);
+} else {
+    console.log(`El número ${numeroAleatorio2} no es primo`);
 }
