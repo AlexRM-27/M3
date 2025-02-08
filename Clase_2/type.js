@@ -30,10 +30,10 @@ console.log(alumnos.length);
 //Números
 let x = 2;
 x += 5;
-console.log(x);
+console.log(x); // Si utilizáramos x++, se aumentará un dígito a la variable declarada, en este ejemplo sería 8.
 
 let division = 0;
-console.log(division / 0);
+console.log(division / 0); // NaN: Not a Number, porque no se puede dividir un número por 0
 
 //Si aprueba o reprueba
 
