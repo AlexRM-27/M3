@@ -40,7 +40,7 @@ console.log(division / 0); // NaN: Not a Number, porque no se puede dividir un n
 let nota = 5.999999999999;
 const notaAprobatoria = 6;
 
-if (nota >= notaAprobatoria) {
+if (nota >= notaAprobatoria) { //Podemos optar por quitar las llaves de esta estructura SOLAMENTE si tenemos una sola línea de código dentro de la condición.
     console.log('Aprobado');
 } else {
     console.log('Reprobado');
@@ -59,3 +59,16 @@ if (temp > 30) {
 let edad = 25;
 let resultado = (edad >= 18) ? 'Mayor de edad' : 'Menor de edad'; //si la condición se puede almacenar en un renglón, se recomienda utilizar el operador ternario, de lo contrario utiliza la estructura tradicional
 console.log(resultado);
+
+//Con switch podemos comparar un valor con varios casos tal como si lo hiciéramos con if-else. Simplemente es otra manera de realizar una condición.
+ let dia = 'jueves';
+ switch (dia) {
+     case 'lunes':
+         console.log('Apenas es lunes, milic.');
+         break;
+     case 'jueves':
+         console.log('Hoy es juevebes');
+         break;
+     default:
+         console.log('No sé qué día es hoy.');
+ }
