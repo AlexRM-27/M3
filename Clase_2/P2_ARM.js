@@ -5,7 +5,7 @@
     • Si la nota está entre 60 y 74, el estudiante aprueba con "Suficiente".
     • Si la nota es menor de 60, el estudiante no aprueba.
 */
-/*
+
 let notaEstudiante = Math.floor(Math.random() * 101); // Con esta línea simulamos el ingreso de la nota al sistema.
 console.log(`La nota es: ${notaEstudiante}`); // Así visualizamos la nota en la consola.
 if (notaEstudiante > 0 && notaEstudiante <= 100) { //Con este primer if se evita el error de que el usuario ingrese un valor fuera el rango de 0 - 100.
@@ -21,7 +21,7 @@ if (notaEstudiante > 0 && notaEstudiante <= 100) { //Con este primer if se evita
 } else {
     console.log('Ingrese un valor entre 0 (cero) y 100 (cien)');
 }
-*/
+
 /* OTROS EJERCICIOS PROPUESTOS POR EL SENSEI
     1. Crear un programa que genere un número aleatorio entre 1 y 100 y te ayude a saber si un número aleatorio es par o impar.
     2. Crear un programa que compare si un número es primo o no.
@@ -29,7 +29,7 @@ if (notaEstudiante > 0 && notaEstudiante <= 100) { //Con este primer if se evita
  */
 
 // EJERCICIO 1
-/*
+
 let numeroAleatorio = Math.floor(Math.random() * 101);
 switch (numeroAleatorio % 2) {
     case 0:
@@ -38,9 +38,9 @@ switch (numeroAleatorio % 2) {
     default:
         console.log(`El número ${numeroAleatorio} es impar`);
 }
-*/
+
 //EJERCICIO 2
-/*
+
 let numeroAleatorio2 = Math.floor(Math.random() * 101);
 let esPrimo = true;
 if (numeroAleatorio2 < 2) { // Excluye 0 y 1 antes del bucle
@@ -58,7 +58,7 @@ if (esPrimo) {
 } else {
     console.log(`El número ${numeroAleatorio2} no es primo`);
 }
-*/
+
 //EJERCICIO 3
 /*Para este ejercicio asociaremos los meses con un número del 1 al 12 de la siguiente manera:
     1 = Enero
