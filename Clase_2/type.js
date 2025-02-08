@@ -72,3 +72,8 @@ console.log(resultado);
      default:
          console.log('No sé qué día es hoy.');
  }
+
+ //Generando un valor aleatorio en Js entre 0 y 100
+
+ let aleatorio = Math.floor(Math.random() * 101); //Math.floor redondea al valor más cercano inferior. Math.random genera un número aleatorio entre 0 y 1. Por lo tanto, para generar un número aleatorio entre 0 y 100, se multiplica por 101 y se redondea al valor inferior.
+ console.log(aleatorio); 
