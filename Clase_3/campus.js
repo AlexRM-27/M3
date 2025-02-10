@@ -46,3 +46,13 @@ for (let b = 1; b <= 20; b++) {
     }
 }
 console.log(`El resultado de sumar los números pares del 1 al 20 es: ${suma}`);
+
+for (let i = 0; i < 3; i++) {
+    console.log("Hola");
+}
+
+let suma1 = 0;
+for (let j = 1; j <= 5; j++){
+    suma1 += j;
+}
+console.log(suma1);
