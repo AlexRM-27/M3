@@ -37,7 +37,7 @@ for (let a = 10; a>0; a--) {
 }
 */
 // E2: Modifica el ciclo para que solo sume los números pares del 1 al 20 y muestre el resultado
-
+/*
 let suma = 0;
 
 for (let b = 1; b <= 20; b++) {
@@ -56,3 +56,12 @@ for (let j = 1; j <= 5; j++){
     suma1 += j;
 }
 console.log(suma1);
+*/
+// ARRAY
+let colores = ['rojo', 'verde', 'azul', 'amarillo'];
+console.log(colores[1]);
+colores[2] = 'naranja';
+colores.push('rosa');
+colores.shift();
+console.log(colores);
+
