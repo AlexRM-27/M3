@@ -26,3 +26,17 @@ do{
 }while (respuesta < 20);
 
 alert(`El número ingresado es: ${respuesta}`);
+
+//while
+let text = "Este módulo es increíble porquie estoy aprendiendo a programar juas juas equis de";
+let vocal = "aeiouAEIOU";
+let counter = 0;
+let j = 0;
+
+while (j < text.length) {
+    if (vocal.includes(text[j])) {
+        counter++;
+    }
+    j++;
+}
+console.log(`El texto tiene ${counter} vocales.`);
