@@ -40,3 +40,24 @@ while (j < text.length) {
     j++;
 }
 console.log(`El texto tiene ${counter} vocales.`);
+
+//E1: USAR CUALQUIER TIPO DE BUCLE PARA REALIZAR UNA TABLA DE MULTIPLICAR. VAMOS A PEDIRLE AL USUARIO UN NÚMERO Y LE VAMOS A MOSTRAR LA TABLA DE MULTIPLICAR DEL 1 AL 10.
+
+let numero = parseInt(prompt("Ingrese un número para ver su tabla de multiplicar:"));
+let i = 1;
+
+console.log(`Tabla del ${numero}:`);
+while (i <= 10) { // Mientras i sea menor o igual a 10
+    console.log(`${numero} x ${i} = ${numero * i}`);
+    i++; // Incrementamos i en cada iteración
+}
+
+//E2: CONTAR LOS DÍGITOS DE UN NÚMERO. LE VAMOS A PEDIR LA USUARIO Y USAREMOS CUALQUIER TIPO DE CICLO PARA CONTAR CUÁNTOS DÍGITOS TIENE.
+
+//E3: OBTENER LA SUMA DE LOS DÍGITOS DE UN NÚMERO 55 = 10.
+
+//E4: ENCONTRAR EL NÚMERO MAYOR DE UN ARREGLO.
+
+const numeros2 = [40, 10, 8, 90, 54, 62, 98, 25, 76, 12, 4];
+
+

@@ -1,11 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tabla de Multiplicar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        #resultado {
+            margin-top: 20px;
+            padding: 10px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            text-align: left;
+        }
+        input, button {
+            padding: 10px;
+            font-size: 16px;
+            margin: 5px;
+        }
+    </style>
 </head>
 <body>
-    <script src="./while.js"></script>
+    <h1>Generador de Tablas de Multiplicar</h1>
+    <p>Ingresa un número y haz clic en "Generar Tabla"</p>
+    
+    <input type="number" id="numero" placeholder="Escribe un número">
+    <button onclick="generarTabla()">Generar Tabla</button>
+
+    <div id="resultado"></div>
+
+    <script>
+        function generarTabla() {
+            let numero = parseInt(document.getElementById("numero").value);
+            let resultadoDiv = document.getElementById("resultado");
+            
+            if (isNaN(numero)) {
+                resultadoDiv.innerHTML = "<p style='color:red;'>Por favor, ingresa un número válido.</p>";
+                return;
+            }
+
+            let tablaHTML = `<h2>Tabla del ${numero}</h2><ul>`;
+            
+            for (let i = 1; i <= 10; i++) {
+                tablaHTML += `<li>${numero} x ${i} = ${numero * i}</li>`;
+            }
+            
+            tablaHTML += "</ul>";
+            resultadoDiv.innerHTML = tablaHTML;
+        }
+    </script>
 </body>
 </html>
