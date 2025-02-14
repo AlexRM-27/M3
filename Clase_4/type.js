@@ -9,3 +9,10 @@ function saludarAlguien(nombre) {
     console.log(`Hola ${nombre}`);
 }
 saludarAlguien('Alex');
+
+//Función con valor por defecto
+function saludarInvitado(nombre = 'mi estimado') {
+    console.log(`Hola ${nombre}, bienvenido.`);
+}
+saludarInvitado();
+saludarInvitado('Paco');
