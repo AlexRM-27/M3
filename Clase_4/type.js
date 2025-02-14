@@ -16,3 +16,29 @@ function saludarInvitado(nombre = 'mi estimado') {
 }
 saludarInvitado();
 saludarInvitado('Paco');
+
+//Función retorno
+function multiplicar(a, b) {
+    return a * b;
+}
+
+let resultado = multiplicar(85, 8); //por lo regular las funciones que hacen este tipo de operaciones los asignamos a una variable para ponerlas en más de un lugar.
+console.log(resultado);
+
+//Función anónima
+const anonima = function() {
+    console.log('Soy una función anónima, salu2 cáli2.');
+}
+anonima();
+
+//Callback
+setTimeout(function() {
+    console.log("Este comentario va a tener un tiempo de espera.");
+}, 5000);
+
+//Arrow function
+const arrowFunction = () => {
+    console.log("Hola, soy una arrow function. =>");
+}
+
+arrowFunction();
