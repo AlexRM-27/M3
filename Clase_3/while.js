@@ -46,9 +46,9 @@ console.log(`El texto tiene ${counter} vocales.`);
 let numero = parseInt(prompt("Ingrese un número para ver su tabla de multiplicar:"));
 let i = 1;
 
-console.log(`Tabla del ${numero}:`);
+console.log(`Tabla del ${numero1}:`);
 while (i <= 10) { // Mientras i sea menor o igual a 10
-    console.log(`${numero} x ${i} = ${numero * i}`);
+    console.log(`${numero1} x ${i} = ${numero1 * i}`);
     i++; // Incrementamos i en cada iteración
 }
 
