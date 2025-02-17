@@ -63,4 +63,8 @@ for (let j = 0; j < canastaDeFrutas.length; j++) {
 }
 
 console.log(`En la canasta hay ${canastaDeFrutas.length} frutas.`);
-console.log(`En esta canasta hay ${cantidadFrutasAcidas} frutas acidas, ${cantidadFrutasSemiacidas} frutas semiacidas, ${cantidadFrutasNeutras} frutas neutras y ${cantidadFrutasDulces} frutas dulces. Además hay ${otrasFrutas} frutas que no se lograron clasificar.`);
+if (otrasFrutas > 0) {
+    console.log(`En esta canasta hay ${cantidadFrutasAcidas} frutas acidas, ${cantidadFrutasSemiacidas} frutas semiacidas, ${cantidadFrutasNeutras} frutas neutras y ${cantidadFrutasDulces} frutas dulces. Además hay ${otrasFrutas} frutas que no se lograron clasificar.`);
+} else {
+    console.log(`En esta canasta hay ${cantidadFrutasAcidas} frutas acidas, ${cantidadFrutasSemiacidas} frutas semiacidas, ${cantidadFrutasNeutras} frutas neutras y ${cantidadFrutasDulces} frutas dulces.`);
+}
