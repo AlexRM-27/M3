@@ -10,7 +10,7 @@ En este repositorio se estarán subiendo las actividades que se realizarán a lo
 
 ☑ Clase 2: Comparaciones y decisiones en JavaScript
 
-Clase 3: Arreglos y cliclos en JavaScript
+☑ Clase 3: Arreglos y ciclos en JavaScript
 
 Clase 4: Funciones en JavaScript
 
@@ -43,6 +43,16 @@ Para el ejercicio 1 extra, se optó por utilizar un switch case para llegar a la
 Para el ejercicio 2 extra, como se pidió evaluar si un número ingresado es primo o no se utilizó un operador for que complementa al condicional if-else para determinar si el número generado es tiene más divisores que él mismo y el número 1 (recordando la propiedad de un número primo que dicta que un número es primo solo si es divisible únicamente entre el número 1 y entre sí mismo). Antes de generar esta evaluación, se añadió un condicional que excluya al 1 y al 0 del operador for, debido a que estos 2 números se excluyen de la definición de ser primos.
 
 Para el ejercicio 3 extra, se decidió utilizar dos sistemas switch para determinar en qué estación nos encontramos dependiendo el mes que se ingrese al programa. En este caso, se decidió asociar un número del 1 al 12 a cada mes del año y se contempló que una estación del año abarca hasta 3 meses. Una vez declarado esto, se decidió optar por generar un número aleatorio del 1 al 13, con el fin de simular todos los meses ingresados y también cuando se ingrese un valor que no sea un mes del año.
+
+
+## CLASE 3: ARREGLOS Y CICLOS EN JAVASCRIPT
+
+En esta clase entendimos lo que son los ciclos y arreglos en JavaScript. Vimos las sintaxis que se utilizan en cada caso, así como sus características generales de cada caso. Junto al sensei hicimos varios ejemplos en la clase virtual y nos dio elementos suficientes para poder resolver el ejercicio que se nos pide resolver en la plataforma de campus.
+
+Para esta ocasión, se ocupaba clasificar el tipo de frutas que se ingresaba en un tipo de array y se necesitaba imprimir en la consola la cantidad de cada fruta descrita. Esto se logró resolver a través de un ciclo for, ya que de antemano sabíamos qué tanto se necesitaba iterar para poder clasificar las frutas ingresadas, porque en este caso nosotros declaramos el array que contenía las frutas a declarar.
+
+El sensei nos propuso un grado más de dificultad al tener que hacer una clasificación de frutas a partir de una imagen que nos compartió en la cual se clasificaban las frutas como ácidas, semiácidas, neutras y dulces. Con esta nueva instrucción, se resolvió el problema utilizando de nueva cuenta un ciclo for, que recorriera cada uno de los índices del array que contenía las frutas (canastaDeFrutas) y la evaluaba con los arrays de las clases de frutas para poder clasificarla y de esta manera imprimiera la cantidad de cada clase de fruta.
+
 
 ## Autor
 
