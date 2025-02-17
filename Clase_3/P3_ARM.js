@@ -25,4 +25,38 @@ for (let i = 0; i < frutas.length; i++) {
         numeroNaranjas++;   
     }
 }
-console.log(`En este arreglo hay ${numeroManzanas} manzanas, ${numeroPeras} peras, ${numeroUvas} uvas y ${numeroNaranjas} naranjas.`);
+console.log(`En este arreglo hay ${numeroManzanas} manzanas, ${numeroPeras} peras, ${numeroUvas} ramo de uvas y ${numeroNaranjas} naranjas.`);
+
+/*
+Ahora intentemos hacer algo diferente. Supongamos que las frutas se clasifican por ácidas, semiácidas, neutras y dulces.
+
+Ahora dependiendo de las frutas que se ingresen, se debe imprimir en la consola la cantidad de frutas de cada tipo.
+*/
+
+let frutasAcidas = ['Kiwi', 'Limón', 'Pomelo', 'Naranja', 'Manzana', 'Uva', 'Arándanos', 'Piña'];
+let frutasSemiacidas = ['Fresa', 'Membrillo', 'Níspero', 'Ciruela', 'Melocotón', 'Mango', 'Mandarina', 'Frambuesa'];
+let frutasNeutras = ['Coco','Aguacate', 'Aceituna', 'Almendra', 'Avellana', 'Cacahuate', 'Nuez'];
+let frutasDulces = ['Plátano', 'Cereza', 'Higo', 'Melón', 'Sandía', 'Pera', 'Granada', 'Chirimoya'];
+
+let canastaDeFrutas = ['Kiwi', 'Fresa', 'Coco', 'Plátano', 'Limón', 'Pomelo', 'Naranja', 'Manzana', 'Uva', 'Arándanos', 'Piña','Membrillo', 'Níspero', 'Ciruela', 'Melocotón', 'Mango', 'Mandarina', 'Frambuesa', 'Aguacate', 'Aceituna', 'Almendra', 'Avellana', 'Cacahuate', 'Nuez', 'Cereza', 'Higo', 'Melón', 'Sandía', 'Pera', 'Granada', 'Chirimoya', 'Papaya', 'Guayaba', 'Maracuyá', 'Tamarindo', 'Moras', 'Fruta del dragón', 'Litchi', 'Carambola', 'Dátil', 'Coco rallado', 'Toronja', 'Grosella', 'Guanábana', 'Mamey', 'Zapote', 'Pitahaya', 'Caqui', 'Manzana verde', 'Durazno', 'Ciruela amarilla'];
+
+let cantidadFrutasAcidas = 0;
+let cantidadFrutasSemiacidas = 0;
+let cantidadFrutasNeutras = 0;
+let cantidadFrutasDulces = 0;
+
+for (let j = 0; j < canastaDeFrutas.length; j++) {
+    let fruta = canastaDeFrutas[j];
+
+   if (frutasAcidas.includes(fruta)) {
+        cantidadFrutasAcidas++;
+    } else if (frutasSemiacidas.includes(fruta)) {
+        cantidadFrutasSemiacidas++;
+    } else if (frutasNeutras.includes(fruta)) {
+        cantidadFrutasNeutras++;
+    } else if (frutasDulces.includes(fruta)) {
+        cantidadFrutasDulces++;
+    }
+}
+
+console.log(`En esta canasta hay ${cantidadFrutasAcidas} frutas acidas, ${cantidadFrutasSemiacidas} frutas semiacidas, ${cantidadFrutasNeutras} frutas neutras y ${cantidadFrutasDulces} frutas dulces.`);
