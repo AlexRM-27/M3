@@ -44,6 +44,7 @@ let cantidadFrutasAcidas = 0;
 let cantidadFrutasSemiacidas = 0;
 let cantidadFrutasNeutras = 0;
 let cantidadFrutasDulces = 0;
+let otrasFrutas = 0;
 
 for (let j = 0; j < canastaDeFrutas.length; j++) {
     let fruta = canastaDeFrutas[j];
@@ -56,7 +57,10 @@ for (let j = 0; j < canastaDeFrutas.length; j++) {
         cantidadFrutasNeutras++;
     } else if (frutasDulces.includes(fruta)) {
         cantidadFrutasDulces++;
+    } else {
+        otrasFrutas++;
     }
 }
 
-console.log(`En esta canasta hay ${cantidadFrutasAcidas} frutas acidas, ${cantidadFrutasSemiacidas} frutas semiacidas, ${cantidadFrutasNeutras} frutas neutras y ${cantidadFrutasDulces} frutas dulces.`);
+console.log(`En la canasta hay ${canastaDeFrutas.length} frutas.`);
+console.log(`En esta canasta hay ${cantidadFrutasAcidas} frutas acidas, ${cantidadFrutasSemiacidas} frutas semiacidas, ${cantidadFrutasNeutras} frutas neutras y ${cantidadFrutasDulces} frutas dulces. Además hay ${otrasFrutas} frutas que no se lograron clasificar.`);
