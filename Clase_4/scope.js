@@ -5,3 +5,12 @@ function saludar() {
 }
 
 saludar();
+
+
+//Function scope
+function saludo(){
+    let mensaje = "Hola a to2"
+    console.log(mensaje);
+}
+
+saludo();
