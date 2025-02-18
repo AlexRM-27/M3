@@ -12,7 +12,7 @@ En este repositorio se estarán subiendo las actividades que se realizarán a lo
 
 ☑ Clase 3: Arreglos y ciclos en JavaScript
 
-Clase 4: Funciones en JavaScript
+☑ Clase 4: Funciones en JavaScript
 
 Clase 5: Intro a Objects en JavaScript
 
@@ -52,6 +52,15 @@ En esta clase entendimos lo que son los ciclos y arreglos en JavaScript. Vimos l
 Para esta ocasión, se ocupaba clasificar el tipo de frutas que se ingresaba en un tipo de array y se necesitaba imprimir en la consola la cantidad de cada fruta descrita. Esto se logró resolver a través de un ciclo for, ya que de antemano sabíamos qué tanto se necesitaba iterar para poder clasificar las frutas ingresadas, porque en este caso nosotros declaramos el array que contenía las frutas a declarar.
 
 El sensei nos propuso un grado más de dificultad al tener que hacer una clasificación de frutas a partir de una imagen que nos compartió en la cual se clasificaban las frutas como ácidas, semiácidas, neutras y dulces. Con esta nueva instrucción, se resolvió el problema utilizando de nueva cuenta un ciclo for, que recorriera cada uno de los índices del array que contenía las frutas (canastaDeFrutas) y la evaluaba con los arrays de las clases de frutas para poder clasificarla y de esta manera imprimiera la cantidad de cada clase de fruta.
+
+
+## CLASE 4: FUNCIONES EN JAVASCRIPT
+
+En esta clase se entendieron las bases de funciones en JavaScript, la manera de declararlas así como los distintos tipos de funciones que existen para resolver problemas dentro de la programación.
+
+Para el entregable se nos pidió hacer un sistema sencillo de almacenamiento de libros que hayamos leído. Para resolver el problema, se utilizó la recomendación que indicaba la plataforma de campus y se crearon 2 funciones: una que se encargaba de almacenar los libros ingresados al sistema y otra que se encargara de imprimir los libros que estaban registrados en el sistema. 
+
+En la función que se encargaba de almacenar los libros se utilizó un array y se definió una variable "libro" que funcionara como objeto, ya que de esta manera se garantizaba que se registraran el título del libro y del autor.
 
 
 ## Autor
