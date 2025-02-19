@@ -66,7 +66,7 @@ usuario.saludar();
 
 // Este es un molde de objetos
 class Persona {
-    constructor(nombre, edad) {
+    constructor(nombre, edad) { //constructor es quien nos ayuda a llenar el molde
         this.nombre = nombre;
         this.edad = edad;
     }
@@ -81,3 +81,19 @@ personaIvan.saludar();
 
 const personaOscar = new Persona('Oscar', 30);
 personaOscar.saludar();
+
+class Estudiante extends Persona { // Hijo
+    constructor(nombre, edad, genero, carrera, promedio) {
+        super(nombre, edad, genero) // Con esto heredamos el constructor de la clase padre
+        this.carrera = carrera;
+        this.promedio = promedio;
+    }
+
+    estudiar() {
+        console.log(`${this.nombre} esta estudiando ${this.carrera}`);
+    }
+}
+
+const AnaPaola = new Estudiante('Ana Paola', 21, 'Femenino', 'Informatica', 9.5);
+AnaPaola.estudiar();
+AnaPaola.saludar();
