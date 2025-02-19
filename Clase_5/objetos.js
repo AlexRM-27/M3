@@ -12,8 +12,7 @@ persona.ciudad = 'Cordoba'; // se cambia la ciudad de la persona
 persona.genero = 'Masculino';
 persona.estatura = 1.75;
 
-delete.persona.estatura; // se elimina la propiedad estatura
-
+delete persona.estatura; // se elimina la propiedad estatura
 
 // Objetos con métodos
 const coche = {
