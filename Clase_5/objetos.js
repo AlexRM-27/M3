@@ -26,3 +26,12 @@ const coche = {
 }
 
 coche.arrancar(coche.marca);
+
+// Método abreviado
+const calculadora = {
+    suma(x,y) {
+        return x + y
+    }
+}
+
+console.log(calculadora.suma(58,49));
