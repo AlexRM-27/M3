@@ -35,3 +35,22 @@ const calculadora = {
 }
 
 console.log(calculadora.suma(58,49));
+
+// Objetos anidados
+const trabajo = {
+    nombre: 'Decathlon',
+    puesto: 'Vendedor Deportivo',
+    ubicacion: {
+        ciudad: 'Ciudad de México',
+        calle: 'Av. Insurgentes Sur',
+        pais: 'México'
+    }
+}
+
+console.log(trabajo.nombre);
+console.log(trabajo.ubicacion.pais);
+console.log(trabajo['ubicacion']['pais']);
+
+trabajo.ubicacion.calle = 'Av. Insurgentes Sur 2374'
+console.log(trabajo.ubicacion.calle);
+
