@@ -54,3 +54,30 @@ console.log(trabajo['ubicacion']['pais']);
 trabajo.ubicacion.calle = 'Av. Insurgentes Sur 2374'
 console.log(trabajo.ubicacion.calle);
 
+// Uso de this
+const usuario = {
+    nombre: 'Ricardo',
+    saludar: function() {
+        console.log(`Hola soy ${this.nombre}`);
+    }
+}
+
+usuario.saludar();
+
+// Este es un molde de objetos
+class Persona {
+    constructor(nombre, edad) {
+        this.nombre = nombre;
+        this.edad = edad;
+    }
+
+    saludar() {
+        console.log(`Hola soy ${this.nombre} y tengo ${this.edad} años.`);
+    }
+}
+
+const personaIvan = new Persona('Ivan', 25);
+personaIvan.saludar();
+
+const personaOscar = new Persona('Oscar', 30);
+personaOscar.saludar();
