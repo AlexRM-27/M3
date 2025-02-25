@@ -49,7 +49,7 @@ const trabajo = {
 
 console.log(trabajo.nombre);
 console.log(trabajo.ubicacion.pais);
-console.log(trabajo['ubicacion']['pais']);
+console.log(trabajo['ubicacion']['pais']); //Notación por corchetes, otra manera de acceder a las propiedades
 
 trabajo.ubicacion.calle = 'Av. Insurgentes Sur 2374'
 console.log(trabajo.ubicacion.calle);
@@ -82,7 +82,7 @@ personaIvan.saludar();
 const personaOscar = new Persona('Oscar', 30);
 personaOscar.saludar();
 
-class Estudiante extends Persona { // Hijo
+class Estudiante extends Persona { // Hijo, se utiliza la clase "Persona" del objeto pasado por lo que se le llama hijo
     constructor(nombre, edad, genero, carrera, promedio) {
         super(nombre, edad, genero) // Con esto heredamos el constructor de la clase padre
         this.carrera = carrera;
