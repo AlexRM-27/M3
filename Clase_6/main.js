@@ -35,3 +35,17 @@ function agregarElementos() {
     nuevoElemento.innerHTML = 'Leidis and madafakas'
     document.body.appendChild(nuevoElemento)
 }
+
+const user = 'admin';
+const pass = '1234';
+
+function login() {
+    let usuario = document.getElementById('username')
+    let password = document.getElementById('password')
+
+    if (usuario === user && password === pass) {
+        alert(`Bienvenido ${user}`)
+    }else{
+        alert('Credenciales incorrectas')
+    }
+}
