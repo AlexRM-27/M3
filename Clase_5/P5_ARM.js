@@ -10,253 +10,101 @@ INSTRUCCIONES:
 • Opcional: agregar una propiedad que contenga la lista de capítulos del libro y métodos que permitan agregar y eliminar capítulos del libro.
 */
 
-const libroSapiens = {
-    titulo: 'Sapiens: de animales a dioses',
-    autor: 'Yuval Noah Harari',
-    year: 2013,
-    estado: 'disponible',
-    capitulos: [], //se crea una propiedad para almacenar los capítulos introducidos
-    describirSapiens: function() {
+class Libro {
+    constructor(titulo, autor, year, estado) {
+        this.titulo = titulo;
+        this.autor = autor;
+        this.year = year;
+        this.estado = estado;
+        this.capitulos = [];
+    }
+
+    describirLibro() {
         if (this.estado === 'disponible') {
-            console.log(`✅ El libro '${this.titulo}', escrito por ${this.autor} publicado en el año ${this.year} se encuentra ${this.estado}.`);
-        } else if (this.estado === 'no disponible') {
-            console.log(`❌ El libro '${this.titulo}', escrito por ${this.autor} publicado en el año ${this.year} no está disponible.`);
+            console.log(`✅ El libro '${this.titulo}', escrito por ${this.autor}, publicado en el año ${this.year}, se encuentra disponible.`);
+        } else {
+            console.log(`❌ El libro '${this.titulo}', escrito por ${this.autor}, publicado en el año ${this.year}, no está disponible.`);
+        }
     }
-    },
-agregarCapitulo: function(tituloCapitulo) {
-    this.capitulos.push(tituloCapitulo);
-    console.log(`📖 Se agregó el capítulo: "${tituloCapitulo}" con éxito.`);
-},
-eliminarCapitulo: function(tituloCapitulo) {
-    const index = this.capitulos.indexOf(tituloCapitulo);
-    if (index !== -1) {
-        this.capitulos.splice(index, 1);
-        console.log(`🗑 Se eliminó el capítulo: "${tituloCapitulo}".`);
-    } else {
-        console.log(`⚠ No se encontró el capítulo: "${tituloCapitulo}".`);
+
+    agregarCapitulo(tituloCapitulo) {
+        this.capitulos.push(tituloCapitulo);
+        console.log(`📖 Se agregó el capítulo: "${tituloCapitulo}".`);
     }
-},
-mostrarCapitulos: function() {
-    if (this.capitulos.length === 0) {
-        console.log("📌 No hay capítulos agregados.");
-    } else {
-        console.log("📖 Lista de capítulos:");
+
+    eliminarCapitulo(tituloCapitulo) {
+        const index = this.capitulos.indexOf(tituloCapitulo);
+        if (index !== -1) {
+            this.capitulos.splice(index, 1);
+            console.log(`💥 Se eliminó el capítulo: "${tituloCapitulo}".`);
+        } else {
+            console.log(`❗ No se encontró el capítulo: "${tituloCapitulo}".`);
+        }
+    }
+
+    mostrarCapitulos() {
+        if (this.capitulos.length === 0) {
+            console.log("📌 No hay capítulos agregados.");
+        } else {
+            console.log(`▶️ Lista de capítulos de '${this.titulo}':`);
             this.capitulos.forEach((capitulo, index) => {
                 console.log(`${index + 1}. ${capitulo}`);
             });
-    }
-}
-}
-
-const libroComprar = {
-    titulo: 'El día que le mundo deje de comprar',
-    autor: 'J.B. Mackinnon',
-    year: 2022,
-    estado: 'no disponible',
-    describirComprar: function() {
-        if (this.estado === 'disponible') {
-            console.log(`✅ El libro '${this.titulo}', escrito por ${this.autor} publicado en el año ${this.year} se encuentra ${this.estado}.`);
-        } else if (this.estado === 'no disponible') {
-            console.log(`❌ El libro '${this.titulo}', escrito por ${this.autor} publicado en el año ${this.year} no está disponible.`);
-    }
-    },
-    agregarCapitulo: function(tituloCapitulo) {
-        this.capitulos.push(tituloCapitulo);
-        console.log(`📖 Se agregó el capítulo: "${tituloCapitulo}" con éxito.`);
-    },
-    eliminarCapitulo: function(tituloCapitulo) {
-        const index = this.capitulos.indexOf(tituloCapitulo);
-        if (index !== -1) {
-            this.capitulos.splice(index, 1);
-            console.log(`🗑 Se eliminó el capítulo: "${tituloCapitulo}".`);
-        } else {
-            console.log(`⚠ No se encontró el capítulo: "${tituloCapitulo}".`);
-        }
-    },
-    mostrarCapitulos: function() {
-        if (this.capitulos.length === 0) {
-            console.log("📌 No hay capítulos agregados.");
-        } else {
-            console.log("📖 Lista de capítulos:");
-                this.capitulos.forEach((capitulo, index) => {
-                    console.log(`${index + 1}. ${capitulo}`);
-                });
         }
     }
 }
 
-const libroMoney = {
-    titulo: 'Money Coach',
-    autor: 'Rodrigo Coutiño',
-    year: 2022,
-    estado: 'no disponible',
-    describirMoney: function() {
-        if (this.estado === 'disponible') {
-            console.log(`✅ El libro '${this.titulo}', escrito por ${this.autor} publicado en el año ${this.year} se encuentra ${this.estado}.`);
-        } else if (this.estado === 'no disponible') {
-            console.log(`❌ El libro '${this.titulo}', escrito por ${this.autor} publicado en el año ${this.year} no está disponible.`);
-    }
-    },
-    agregarCapitulo: function(tituloCapitulo) {
-        this.capitulos.push(tituloCapitulo);
-        console.log(`📖 Se agregó el capítulo: "${tituloCapitulo}" con éxito.`);
-    },
-    eliminarCapitulo: function(tituloCapitulo) {
-        const index = this.capitulos.indexOf(tituloCapitulo);
-        if (index !== -1) {
-            this.capitulos.splice(index, 1);
-            console.log(`🗑 Se eliminó el capítulo: "${tituloCapitulo}".`);
-        } else {
-            console.log(`⚠ No se encontró el capítulo: "${tituloCapitulo}".`);
-        }
-    },
-    mostrarCapitulos: function() {
-        if (this.capitulos.length === 0) {
-            console.log("📌 No hay capítulos agregados.");
-        } else {
-            console.log("📖 Lista de capítulos:");
-                this.capitulos.forEach((capitulo, index) => {
-                    console.log(`${index + 1}. ${capitulo}`);
-                });
-        }
-    }
-}
+// Creando los libros
 
-const libroCarrera = {
-    titulo: 'Como darle impulso a tu (nueva) carrera',
-    autor: 'Dale Carnegie',
-    year: 2022,
-    estado: 'disponible',
-    describirCarrera: function() {
-        if (this.estado === 'disponible') {
-            console.log(`✅ El libro '${this.titulo}', escrito por ${this.autor} publicado en el año ${this.year} se encuentra ${this.estado}.`);
-        } else if (this.estado === 'no disponible') {
-            console.log(`❌ El libro '${this.titulo}', escrito por ${this.autor} publicado en el año ${this.year} no está disponible.`);
-    }
-    },
-    agregarCapitulo: function(tituloCapitulo) {
-        this.capitulos.push(tituloCapitulo);
-        console.log(`📖 Se agregó el capítulo: "${tituloCapitulo}" con éxito.`);
-    },
-    eliminarCapitulo: function(tituloCapitulo) {
-        const index = this.capitulos.indexOf(tituloCapitulo);
-        if (index !== -1) {
-            this.capitulos.splice(index, 1);
-            console.log(`🗑 Se eliminó el capítulo: "${tituloCapitulo}".`);
-        } else {
-            console.log(`⚠ No se encontró el capítulo: "${tituloCapitulo}".`);
-        }
-    },
-    mostrarCapitulos: function() {
-        if (this.capitulos.length === 0) {
-            console.log("📌 No hay capítulos agregados.");
-        } else {
-            console.log("📖 Lista de capítulos:");
-                this.capitulos.forEach((capitulo, index) => {
-                    console.log(`${index + 1}. ${capitulo}`);
-                });
-        }
-    }
-}
+const libro1 = new Libro('Sapiens: de animales a dioses', 'Yuval Noah Harari', 2011, 'disponible');
+const libro2 = new Libro('El día que le mundo deje de comprar', 'J.B Mackinnon', 2017, 'no disponible');
+const libro3 = new Libro('Money Coach', 'Investor Coach', 2020, 'no disponible');
+const libro4 = new Libro('Como darle impulso a tu (nueva) carrera', 'Dale Carnegie', 2022, 'disponible');
+const libro5 = new Libro('Repensar la pobreza', 'Banerjee A. & Dufflo, E.', 2019, 'disponible');
+const libro6 = new Libro('La psicología del dinero', 'Housel, M.', 2020, 'disponible');
 
-const libroPobreza = {
-    titulo: 'Repensar la pobreza',
-    autor: 'Banerjee A. & Dufflo, E.',
-    year: 2019,
-    estado: 'disponible',
-    describirPobreza: function() {
-        if (this.estado === 'disponible') {
-            console.log(`✅ El libro '${this.titulo}', escrito por ${this.autor} publicado en el año ${this.year} se encuentra ${this.estado}.`);
-        } else if (this.estado === 'no disponible') {
-            console.log(`❌ El libro '${this.titulo}', escrito por ${this.autor} publicado en el año ${this.year} no está disponible.`);
-    }
-    },
-    agregarCapitulo: function(tituloCapitulo) {
-        this.capitulos.push(tituloCapitulo);
-        console.log(`📖 Se agregó el capítulo: "${tituloCapitulo}" con éxito.`);
-    },
-    eliminarCapitulo: function(tituloCapitulo) {
-        const index = this.capitulos.indexOf(tituloCapitulo);
-        if (index !== -1) {
-            this.capitulos.splice(index, 1);
-            console.log(`🗑 Se eliminó el capítulo: "${tituloCapitulo}".`);
-        } else {
-            console.log(`⚠ No se encontró el capítulo: "${tituloCapitulo}".`);
-        }
-    },
-    mostrarCapitulos: function() {
-        if (this.capitulos.length === 0) {
-            console.log("📌 No hay capítulos agregados.");
-        } else {
-            console.log("📖 Lista de capítulos:");
-                this.capitulos.forEach((capitulo, index) => {
-                    console.log(`${index + 1}. ${capitulo}`);
-                });
-        }
-    }
-}
+// Sapiens
+libro1.describirLibro();
+libro1.agregarCapitulo('Un animal sin importancia');
+libro1.agregarCapitulo('El árbol del saber');
+libro1.agregarCapitulo('Un día en la vida de Adán y Eva');
+libro1.agregarCapitulo('El Diluvio');
+libro1.eliminarCapitulo('El Diluvio');
+libro1.mostrarCapitulos();
 
-const libroDinero = {
-    titulo: 'La psicología del dinero',
-    autor: 'Morgan Housel',
-    year: 2020,
-    estado: 'disponible',
-    describirDinero: function() {
-        if (this.estado === 'disponible') {
-            console.log(`✅ El libro '${this.titulo}', escrito por ${this.autor} publicado en el año ${this.year} se encuentra ${this.estado}.`);
-        } else if (this.estado === 'no disponible') {
-            console.log(`❌ El libro '${this.titulo}', escrito por ${this.autor} publicado en el año ${this.year} no está disponible.`);
-    }
-    },
-    agregarCapitulo: function(tituloCapitulo) {
-        this.capitulos.push(tituloCapitulo);
-        console.log(`📖 Se agregó el capítulo: "${tituloCapitulo}" con éxito.`);
-    },
-    eliminarCapitulo: function(tituloCapitulo) {
-        const index = this.capitulos.indexOf(tituloCapitulo);
-        if (index !== -1) {
-            this.capitulos.splice(index, 1);
-            console.log(`🗑 Se eliminó el capítulo: "${tituloCapitulo}".`);
-        } else {
-            console.log(`⚠ No se encontró el capítulo: "${tituloCapitulo}".`);
-        }
-    },
-    mostrarCapitulos: function() {
-        if (this.capitulos.length === 0) {
-            console.log("📌 No hay capítulos agregados.");
-        } else {
-            console.log("📖 Lista de capítulos:");
-                this.capitulos.forEach((capitulo, index) => {
-                    console.log(`${index + 1}. ${capitulo}`);
-                });
-        }
-    }
-}
-//Sapiens
-libroSapiens.describirSapiens();
-libroSapiens.agregarCapitulo('Un animal sin importancia');
-libroSapiens.agregarCapitulo('El árbol del saber');
-libroSapiens.agregarCapitulo('Un día en la vida de Adán y Eva');
-libroSapiens.agregarCapitulo('El Diluvio');
-libroSapiens.mostrarCapitulos();
+// El día que le mundo deje de comprar
+libro2.describirLibro();
+libro2.agregarCapitulo('PRÓLOGO: Tenemos que dejar de comprar pero no podemos dejar de comprar');
+libro2.agregarCapitulo('A qué renunciamos y a qué nos aferramos');
+libro2.mostrarCapitulos();
 
-libroSapiens.eliminarCapitulo('El Diluvio');
-libroSapiens.mostrarCapitulos();
-
- //El dia que le mundo deje de comprar
-libroComprar.describirComprar();
-libroComprar.agregarCapitulo('PRÓLOGO: Tenemso que dejar de comprar pero no podermos dejar de comprar');
-libroComprar.agregarCapitulo('A qué renunciamos y a qué nos aferramos');
-libroComprar.mostrarCapitulos();
-
-// MoneyCoach
-libroMoney.describirMoney();
+// Money Coach
+libro3.describirLibro();
+libro3.mostrarCapitulos();
 
 // Como darle impulso a tu (nueva) carrera
-libroCarrera.describirCarrera();
+libro4.describirLibro();
+libro4.agregarCapitulo('Cómo crear una actitud profesional');
+libro4.agregarCapitulo('Como desarrollar nuestra marca personal');
+libro4.agregarCapitulo('Cómo potenciar nuestras habilidades de gestión de personas');
+libro4.agregarCapitulo('Cómo potenciar nuestras habilidades de gestión de procesos');
+libro4.mostrarCapitulos();
 
 // Repensar la pobreza
-libroPobreza.describirPobreza();
+libro5.describirLibro();
+libro5.agregarCapitulo('Piénsalo bien, pero piénsalo otra vez');
+libro5.agregarCapitulo('¿Mil millones de personas hambrientas?');
+libro5.agregarCapitulo('¿Soluciones al alcance de la mano para una mejora de la salud mundial?');
+libro5.agregarCapitulo('Los mejores de la clase');
+libro5.agregarCapitulo('La gran familia de Pak Sudarno');
+libro5.agregarCapitulo('Gestores espontáneos de fondos de alto riesgo');
+libro5.mostrarCapitulos();
 
 // La psicología del dinero
-libroDinero.describirDinero();
+libro6.describirLibro();
+libro6.agregarCapitulo('Nadie está loco');
+libro6.agregarCapitulo('Suerte y riesgo');
+libro6.agregarCapitulo('No tener nunca suficiente');
+libro6.agregarCapitulo('La confusión del interés compuesto');
+libro6.agregarCapitulo('Hacerse rico frente a conservar la riqueza');
+libro6.mostrarCapitulos();
