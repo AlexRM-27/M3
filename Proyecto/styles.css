@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    height: 100vh;
+    display: flex;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.form-container{
+    width: 50%;
+    background-color: #2c2626;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container{
+    width: 50%;
+    background: url('https://images.pexels.com/photos/1199957/pexels-photo-1199957.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center center/cover;
+}
+
+.login-container{
+    width: 30vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 15px;
+    align-items: center;
+}
+
+label{
+    font-size: 12px;
+}
+
+input{
+    width: 95%;
+    padding: 2px;
+    margin: 5px 0px;
+}
+
+button{
+    width: 50%;
+    height: 5vh;
+    margin-top: 7px;
+    margin-left: 20%;
+    cursor: pointer;
+    border: none;
+    background-color: #2c2626;
+    color: white;
+    border-radius: 15px;
+}
+
+button:hover{
+    background-color: rgb(0, 0, 0);
+    transform: scale(1.05);
+}
+
+.error{
+    color: red;
+    font-size: large;
+}
