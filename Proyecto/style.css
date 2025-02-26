@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    height: 100vh;
+    display: flex;
+    margin: 0;
+    background-color: darkslategrey;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+.food-container{
+    padding: 50px;
+}
+
+img{
+    width: 60vh;
+    height: 50vh;
+}
+
