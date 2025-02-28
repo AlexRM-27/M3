@@ -2,19 +2,51 @@
 
 body{
     height: 100vh;
-    display: flex;
-    margin: 0;
-    background-color: darkslategrey;
-    font-family: "Montserrat", sans-serif;
+    margin: 10;
+    font-family: "Montserrat", serif;
+    background-color: #161627;
     color: white;
 }
 
 .food-container{
-    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 5%;
 }
 
 img{
-    width: 60vh;
+    width: 60vw;
     height: 50vh;
 }
 
+.comment-container{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    margin-left: 5%;
+}
+
+textarea{
+    margin-top: -40px;
+    margin-bottom: 10px;
+    font-size: 10px;
+    height: 10vh;
+}
+
+button{
+    width: 40%;
+    height: 5vh;
+    margin-top: 7px;
+    margin-left: 30%;
+    cursor: pointer;
+    border: none;
+    background-color: #4a4e69;
+    color: white;
+    border-radius: 15px;
+}
+
+button:hover{
+    background-color: #14151d;
+    transform: scale(1.05);
+}
