@@ -41,15 +41,44 @@
 .comments-list {
     flex-grow: 1;
     overflow-y: auto;
-    max-height: 200px;
+    max-height: 100%;
 }
 
 .comment {
-    background: #f1f1f1;
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin-bottom: 5px;
+    background: var(--color1);
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 8px;
     font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.comment-text {
+    flex-grow: 1;
+}
+
+.delete-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.delete-btn:hover {
+    background: darkred;
 }
 
 .comment-input {
@@ -65,7 +94,7 @@ input {
 }
 
 button {
-    background-color: #3897f0;
+    background-color: var(--color4);
     color: white;
     border: none;
     padding: 6px 10px;
@@ -74,5 +103,5 @@ button {
 }
 
 button:hover {
-    background-color: #2878c0;
+    background-color: var(--color5);
 }
