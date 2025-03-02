@@ -1,0 +1,13 @@
+.articulo-display{
+    padding: 1.875rem 0;
+}
+
+.pdf-articulo{
+    display: flex;
+    align-items: center;
+    width: 90%; 
+    height: 80vh; 
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
