@@ -128,10 +128,13 @@ function displayComments() {
         comments.forEach(comment => {
             const li = document.createElement('li');
             li.innerHTML = `
-                <strong>${comment.user}:</strong> ${comment.text}
+                <strong>${comment.user}:</strong>
+                <p>${comment.text}</p>
                 ${currentUser && currentUser.alias === comment.user
-                    ? `<button onclick="editComment(${comment.id})">Editar</button>
-                       <button onclick="deleteComment(${comment.id})">Eliminar</button>`
+                    ? `<div class="comment-actions">
+                           <button onclick="editComment(${comment.id})">Editar</button>
+                           <button onclick="deleteComment(${comment.id})">Eliminar</button>
+                       </div>`
                     : ''
                 }
             `;
