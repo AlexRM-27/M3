@@ -12,9 +12,9 @@ function logIn() {
     const userFind = users.find(user => user.username === usernamePage && user.password === passwordPage);
 
     if (userFind) {
-        localStorage.setItem("loggedUser", JSON.stringify(user));
+        localStorage.setItem("loggedUser", JSON.stringify(userFind));
         window.location.href = "home.html";
     } else {
-        error.textContent = 'Credenciales incorrectas'
+        error.textContent = 'Credenciales incorrectas';
     }
 }
