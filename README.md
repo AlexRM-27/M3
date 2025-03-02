@@ -20,7 +20,7 @@ En este repositorio se estarán subiendo las actividades que se realizarán a lo
 
 ☑ Clase 7: Dominando el DOM en JavaScript
 
-Clase 8: Proyecto Final (dom)
+☑ Clase 8: Proyecto Final (dom)
 
 
 ## CLASE 1 - INTRODUCCIÓN A JAVASCRIPT
@@ -96,6 +96,13 @@ Para el archivo js se crea una función que nos permite crear una cadena de cara
 Para la evaluación de la contraseña se calcula la fortaleza con su longitud y su complejidad. Una vez calculada la complejidad se procede a actualizar la barra que permite al usuario visualizar mejor el nivel de fortaleza que tiene su contraseña generada.
 
 Se implementó un historial de las contraseñas generadas por el usuario, limitado a 5 contraseñas. Esta lista se actualiza dinámicamente en el sitio y el usuario puede descargar esta lista que se ha generado en un archivo de texto (.txt).
+
+
+## CLASE 8: PROYECTO FINAL
+
+Para el proyecto final del módulo se tomó como base el mismo sitio web que he venido desarrollando desde el módulo 1 y el módulo 2. Primero se hizo la estructura con HTML en el módulo 1, después se le asignaron estilos responsivos con lo aprendido en el módulo 2 y finalmente en este módulo se le ha dado funcionalidad a la página con JavaScript.
+
+Cabe recalcar que el código generado en html y css también tuvo unas ligeras modificaciones con el fin de adaptarlo a una mejor responsividad e interacción con el usuario. Cobn estos primeros pasos en la creación de una página web desde cero he aprendido a utilizar las funciones básicas de Js vistas a lo largo del módulo y es ahora cuando empiezo a tomar más consciencia de cómo estos 3 códigos se relacionan entre sí para dar inicio a conceptos más complejos y que son necesarios para el desarrollo de páginas web.
 
 
 ## Autor
