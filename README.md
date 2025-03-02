@@ -14,9 +14,9 @@ En este repositorio se estarán subiendo las actividades que se realizarán a lo
 
 ☑ Clase 4: Funciones en JavaScript
 
-Clase 5: Intro a Objects en JavaScript
+☑ Clase 5: Intro a Objects en JavaScript
 
-Clase 6: Intro al DOM en JavaScript
+☑ Clase 6: Intro al DOM en JavaScript
 
 Clase 7: Dominando el DOM en JavaScript
 
@@ -61,6 +61,15 @@ En esta clase se entendieron las bases de funciones en JavaScript, la manera de 
 Para el entregable se nos pidió hacer un sistema sencillo de almacenamiento de libros que hayamos leído. Para resolver el problema, se utilizó la recomendación que indicaba la plataforma de campus y se crearon 2 funciones: una que se encargaba de almacenar los libros ingresados al sistema y otra que se encargara de imprimir los libros que estaban registrados en el sistema. 
 
 En la función que se encargaba de almacenar los libros se utilizó un array y se definió una variable "libro" que funcionara como objeto, ya que de esta manera se garantizaba que se registraran el título del libro y del autor.
+
+
+## CLASE 5: INTRO A OBJECTS EN JAVASCRIPT
+
+Para esta clase se nos pidió que practicáramos con el concepto de Objetos mediante la creación de objetos que almacenaran información de libros. Para esta ocasión utilicé algunos de los libros que tuve la oportunidad de leer y aún conservo para la creación del programa.
+
+Utilizando el ejemplo visto en clase con el sensei, se utilizó un "molde" para crear objetos a partir de una clase y que nos permite solucionar el problema planteado al inicio.  La clase sigue el paradigma de programación orientada a objetos (POO), utilizando un constructor para inicializar las propiedades del libro y métodos para interactuar con él. Además, se han agregado iconos en los console.log para mejorar la legibilidad de los mensajes de salida.
+
+Se incluyen métodos para describir el libro, agregar y eliminar capítulos, y mostrar la lista de capítulos. Para efectos de la presentación del código, se invocan console.log() con el fin de corroborar que el código es funcional y cumple con los requerimientos del problema planteado.
 
 
 ## Autor
