@@ -18,7 +18,7 @@ En este repositorio se estarán subiendo las actividades que se realizarán a lo
 
 ☑ Clase 6: Intro al DOM en JavaScript
 
-Clase 7: Dominando el DOM en JavaScript
+☑ Clase 7: Dominando el DOM en JavaScript
 
 Clase 8: Proyecto Final (dom)
 
@@ -81,6 +81,21 @@ Primeramente cree un HTML y una hoja de estilos sencilla que sirviera como molde
 El usuario puede comentar en la página ya sea por medio de hacer click en el botón correspondiente a publicar el comentario o bien haciendo click en la tecla Enter de su teclado. También puede eliminar su comentario si así lo desea al hacer click en un botón rojo que se encuentra a un costado del comentario publicado si el usuario así lo desea.
 
 Por último, la función loadComments() recupera y muestra los comentarios almacenados que se hayan generado en el sitio web en cuestión.
+
+
+## CLASE 7: DOMINANDO EL DOM EN JAVASCRIPT
+
+En esta ocasión se ha pedido crear un generador de contraseñas, por lo que se han utilizado 3 archivos, uno HTML para darle estructura, uno CSS para definir el estilo y por último un JS para darle funcionalidad.
+
+En cuanto a la estructura se ha generado un contenedor principal que se encarga de contener al generador en sí. Dentro del contenedor se ha generado un campo donde muestra la contraseña generada y un botón de copiar. Después encontramos los controles de personalización que permiten al usuario la longitud de la contraseña y seleccionar los tipos de caracteres que el usuario necesite para su contraseña. Por último tenemos un medidor de fortaleza, el cual muestra visualmente la fortaleza de la contraseña generada.
+
+La hoja de estilos nos permite tener un diseño coherente visualmente y fácil de modificar si se necesita. Este diseño es responsivo y puede adaptarse a diferentes tamaños de pantalla.
+
+Para el archivo js se crea una función que nos permite crear una cadena de caracteres basada en las preferencias del usuario y genera una contraseña aleatoria utilizando un bucle for. La contraseña que se genera se muestra en el campo de texto y se procede a evaluar la fortaleza de ésta.
+
+Para la evaluación de la contraseña se calcula la fortaleza con su longitud y su complejidad. Una vez calculada la complejidad se procede a actualizar la barra que permite al usuario visualizar mejor el nivel de fortaleza que tiene su contraseña generada.
+
+Se implementó un historial de las contraseñas generadas por el usuario, limitado a 5 contraseñas. Esta lista se actualiza dinámicamente en el sitio y el usuario puede descargar esta lista que se ha generado en un archivo de texto (.txt).
 
 
 ## Autor
