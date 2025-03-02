@@ -1,0 +1,88 @@
+:root {
+    --background-color: #080708;
+    --text-color: #EDD3C4;
+    --container-bg: #3B60E4;
+    --password-box-bg: #C8ADC0;
+    --button-bg: #7765E3;
+    --button-hover-bg: #C8ADC0;
+    --button-hover-text: #080708;
+    --strength-bar-bg: #7765E3;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: var(--container-bg);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 300px;
+}
+
+.password-box {
+    display: flex;
+    justify-content: space-between;
+    background: var(--password-box-bg);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+input[type="text"] {
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    width: 80%;
+    outline: none;
+    color: var(--background-color);
+}
+
+button {
+    background: var(--button-bg);
+    color: var(--text-color);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: var(--button-hover-bg);
+    color: var(--button-hover-text);
+}
+
+.controls {
+    text-align: left;
+    margin-top: 15px;
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+}
+
+.strength {
+    margin-top: 10px;
+}
+
+#strength-bar {
+    height: 10px;
+    background: var(--strength-bar-bg);
+    border-radius: 5px;
+}
