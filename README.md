@@ -72,6 +72,17 @@ Utilizando el ejemplo visto en clase con el sensei, se utilizó un "molde" para 
 Se incluyen métodos para describir el libro, agregar y eliminar capítulos, y mostrar la lista de capítulos. Para efectos de la presentación del código, se invocan console.log() con el fin de corroborar que el código es funcional y cumple con los requerimientos del problema planteado.
 
 
+## CLASE 6: INTRO AL DOM EN JAVASCRIPT
+
+Para este entregable se nos pidió que crearamos una caja de comentarios en la que diferentes usuarios puedan agregar y compartir lo que piensen acerca de lo que se comparta en una página web, por lo que decidí simular un post de Instagram.
+
+Primeramente cree un HTML y una hoja de estilos sencilla que sirviera como molde de esta simulación de post de Instagram. Para el archivo JavaScript cree unos avatares que se generan aleatoriamente simulando perfiles de personas que comentan en el post. Se utilizó un localStorage para almacenar los comentarios, de modo que persistan aunque la página se recargue. 
+
+El usuario puede comentar en la página ya sea por medio de hacer click en el botón correspondiente a publicar el comentario o bien haciendo click en la tecla Enter de su teclado. También puede eliminar su comentario si así lo desea al hacer click en un botón rojo que se encuentra a un costado del comentario publicado si el usuario así lo desea.
+
+Por último, la función loadComments() recupera y muestra los comentarios almacenados que se hayan generado en el sitio web en cuestión.
+
+
 ## Autor
 
 - [@AlexRM-27](https://www.github.com/AlexRM-27)
