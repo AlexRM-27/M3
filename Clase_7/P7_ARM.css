@@ -79,10 +79,37 @@ label {
 
 .strength {
     margin-top: 10px;
+    text-align: left;
 }
 
 #strength-bar {
     height: 10px;
     background: var(--strength-bar-bg);
     border-radius: 5px;
+    margin-top: 5px;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.strength-text {
+    font-size: 0.9em;
+    margin-top: 5px;
+    color: var(--text-color);
+}
+
+.history {
+    margin-top: 20px;
+    text-align: left;
+}
+
+#history-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#history-list li {
+    background-color: var(--password-box-bg);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    color: var(--background-color);
 }
