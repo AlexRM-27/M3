@@ -172,7 +172,7 @@ nav ul {
     margin: 0 auto;
 }
 
-#login input{
+#login-form input{
     width: 100%;
     height: fit-content;
     padding: 0.625rem;
@@ -399,7 +399,7 @@ nav ul {
         grid-template-columns: 1fr;
     }
 
-    #login, .signup {
+    #login-form, .signup {
         width: 100%;
         height: fit-content;
     }

@@ -40,15 +40,17 @@
     <!-- Caja de Comentarios -->
     <section class="experiencias">
         <h2>Comentarios</h2>
-        <form>
+        <form id="comment-form">
             <textarea placeholder="¿Qué te pareció la información mostrada?" required></textarea>
             <button type="submit"><span class="material-icons">send</span>Comentar</button>
         </form>
+        <div id="comment-alert" style="display: none;">
+            <p>Debes iniciar sesión para comentar.</p>
+        </div>
         <ul class="comentarios">
             <h3>Experiencias Compartidas</h3>
-            <li><strong>Usuario 1:</strong> Comentario del usuario.</li>
-            <li><strong>Usuario 2:</strong> Otro comentario.</li>
         </ul>
+ 
     </section>
 
     <footer>

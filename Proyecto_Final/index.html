@@ -43,7 +43,7 @@
     </div>
     <!-- Sección de Inicio de Sesión y Registro -->
     <section class="signin-signup">
-        <div id="login" class="signin">
+        <div id="login-form" class="signin">
             <h2>Iniciar Sesión</h2>
             <form class="signin-form">
                 <label for="username">Usuario:</label>
@@ -52,6 +52,10 @@
                 <input type="password" id="password" placeholder="Tu contraseña" required>
                 <button type="submit">Iniciar Sesión</button>
             </form>
+        </div>
+        <div id="user-info" style="display: none;" class="user-info">
+            <p>Bienvenido, <span id="username-display"></span></p>
+            <button id="logout-button">Cerrar Sesión</button>
         </div>        
     
         <div id="registro" class="signup">
@@ -151,21 +155,23 @@
             </div>
         </section>
 
-<!-- Sección de Comentarios Colaborativos -->
+<!-- Sección de Comentarios -->
 <section class="experiencias">
-    <form>
+    <form id="comment-form">
     <h2>Comparte tu experiencia</h2>
     <p>¿Tienes consejos o experiencias sobre la nutrición?</p>
     <p>Deja tu comentario y comparte con la comunidad.</p>
-        <textarea placeholder="Escribe tu experiencia"></textarea>
+        <textarea placeholder="Escribe tu experiencia" required></textarea>
         <button type="submit"><span class="material-icons">send</span> <p>Comentar</p></button>
     </form>
+
+    <div id="comment-alert" style="display: none;">
+        <p>Debes iniciar sesión para comentar.</p>
+    </div>
 
     <!-- Lista de comentarios -->
     <ul class="comentarios">
         <h3>Experiencias Compartidas</h3>
-        <li><strong>Usuario 1:</strong> Comentario del usuario.</li>
-        <li><strong>Usuario 2:</strong> Otro comentario.</li>
     </ul>
 </section>
 </main>
